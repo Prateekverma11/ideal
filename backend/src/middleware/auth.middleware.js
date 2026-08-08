@@ -3,7 +3,7 @@ import User from "../modules/users/user.model.js";
 import { env } from "../config/env.js";
 
 export const protect = async (req, res, next) => {
-  try {
+  try { 
     const authHeader = req.headers.authorization;
 
     if (!authHeader || !authHeader.startsWith("Bearer ")) {

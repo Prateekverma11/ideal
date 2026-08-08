@@ -6,6 +6,7 @@ import Dashboard from "./pages/Dashboard";
 import ReportAnimal from "./pages/ReportAnimal";
 import Notifications from "./pages/Notifications";
 import Profile from "./pages/Profile";
+import MyReports from "./pages/MyReports";
 
 import ProtectedRoute from "./components/ProtectedRoute";
 
@@ -52,6 +53,10 @@ function App() {
           </ProtectedRoute>
         }
       />
+      <Route
+  path="/my-reports"
+  element={<MyReports />}
+/>
 
     </Routes>
   );
